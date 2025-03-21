@@ -72,6 +72,25 @@
         width: 100%;
         height: auto;
     }
+
+    /* Improved Image Handling and Animation */
+    .image.featured {
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .image.featured img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .image.featured img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .box.special {
+        margin-bottom: 2em;
+    }
+
 </style>
 
 	</head>
