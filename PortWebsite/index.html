@@ -91,6 +91,30 @@
         margin-bottom: 2em;
     }
 
+
+    /* Improved Image Handling: Prevent Stretching */
+    .image-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 10px;
+        height: 300px; /* Sets a consistent height for the image container */
+    }
+    .image-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .image-box img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .box.special {
+        margin-bottom: 2em;
+    }
+
 </style>
 
 	</head>
